@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apology Page</title>
+  <link rel="stylesheet" href="draft.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="background">
+    <video id="background-video" autoplay loop muted playsinline>
+      <source src="Main Koi Aisa Geet Gaoon - HD VIDEO _ Shah Rukh Khan & Juhi Chawla _ Yes Boss _ 90 s Romantic Songs (online-video-cutter.com).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Play Button -->
+  <div class="play-button">
+    <button onclick="playVideo()">Play with Sound</button>
+  </div>
+
+  <!-- Music Player Display -->
+  <div class="music-player">
+    <p>🎵 Playing: <span>Main Koi Aisa Geet Gaun</span></p>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>hermione, I'm really sorry</h1>
+    <p>My "sorry" comes from the bottom of my heart.</p>
+    <h2>Please Maaf Me</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>From My Heart</h3>
+        <p>I made a mistake, and this apology comes from my deepest heart.</p>
+      </div>
+      <div class="card">
+        <h3>Forever Sorry</h3>
+        <p>I'll say sorry a thousand times if that's what it takes. Your happiness means everything to me.</p>
+      </div>
+      <div class="card">
+        <h3>Promise</h3>
+        <p>I promise to learn from my mistakes and give you the respect you deserve.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function playVideo() {
+      const video = document.getElementById('background-video');
+      video.muted = false; // Enable audio
+      video.play();        // Play the video with sound
+    }
+  </script>
+</body>
+</html>
